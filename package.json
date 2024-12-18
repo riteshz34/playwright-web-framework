@@ -1,0 +1,26 @@
+{
+  "name": "playwright-web-framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test --project='Critical Suite' --headed",
+    "regression": "npx playwright test --project='Regression Suite' --headed",
+    "full-suite": "npx playwright test --project='Full Suite' --headed",
+    "clean": "rm -rf allure-results allure-report",
+    "allure": "allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "allure-playwright": "^3.0.7",
+    "eslint": "^9.16.0",
+    "playwright": "^1.49.1",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
